@@ -10,8 +10,12 @@ public class Main {
 
         InitTest test = new InitTest();
 
-        test.d1.printInfo();
-        test.d1.feedInfo();
+        //test.d1.printInfo();
+        //test.d1.feedInfo();
+
+        DietCoach coach = new DietCoach("Test");
+        coach.feedInfo(test.d1);
+        coach.feedInfo(test.c1);
     }
 }
 

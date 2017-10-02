@@ -1,11 +1,10 @@
 package food;
 
 public class Dog extends Animal implements Feeder {
-    protected Food food;
 
     public Dog(String name, double weight) {
         super(name, weight);
-        food = Food.DOG;
+        setFood(Food.DOG);
     }
 
     @Override
@@ -17,6 +16,6 @@ public class Dog extends Animal implements Feeder {
 
     @Override
     public void feedInfo() {
-        System.out.println("Hunden " + getName() + "s portion är " + (getWeight() / food.getRatio()) + " gram " + food.getName());
+        System.out.println("Hunden " + getName() + "s portion är " + (getWeight() / getFood().getRatio()) + " gram " + getFood().getName());
     }
 }

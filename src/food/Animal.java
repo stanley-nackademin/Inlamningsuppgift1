@@ -3,6 +3,7 @@ package food;
 public abstract class Animal {
     protected String name;
     protected double weight; // In gram
+    protected Food food;
 
     public String getName() {
         return name;
@@ -18,6 +19,14 @@ public abstract class Animal {
 
     public void setWeight(double weight) {
         this.weight = weight;
+    }
+
+    public Food getFood() {
+        return food;
+    }
+
+    public void setFood(Food food) {
+        this.food = food;
     }
 
     public Animal(String name, double weight) {
