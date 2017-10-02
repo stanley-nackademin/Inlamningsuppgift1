@@ -4,14 +4,13 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Vilket djur ska få mat?");
+        /*System.out.println("Vilket djur ska få mat?");
         Scanner input = new Scanner(System.in);
-        input.nextLine();
+        input.nextLine();*/
 
         InitTest test = new InitTest();
 
-        test.c1.printInfo();
-
+        test.d1.printInfo();
         test.d1.feedInfo();
     }
 }

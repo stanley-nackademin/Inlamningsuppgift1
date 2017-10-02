@@ -1,22 +1,22 @@
 package food;
 
 public class Dog extends Animal implements Feeder {
-    protected Fodder fodder;
+    protected Food food;
 
     public Dog(String name, double weight) {
         super(name, weight);
-        fodder = new Fodder(FodderType.Hundfoder);
-        fodder.fodderType.getRatio();
+        food = Food.DOG;
     }
 
     @Override
     public void printInfo() {
-        System.out.println("Hundens namn: " + name);
-        System.out.println("Hundens vikt: " + weight + " g");
+        System.out.println("Djurtyp: Hund");
+        System.out.println("Namn: " + getName());
+        System.out.println("Vikt i gram: " + getWeight());
     }
 
     @Override
     public void feedInfo() {
-        System.out.println("Hunden " + name + "s portion är " + (weight / fodder.fodderType.getRatio()) + " gram " + fodder.toString());
+        System.out.println("Hunden " + getName() + "s portion är " + (getWeight() / food.getRatio()) + " gram " + food.getName());
     }
 }

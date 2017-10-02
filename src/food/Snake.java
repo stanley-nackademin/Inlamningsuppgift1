@@ -1,11 +1,11 @@
 package food;
 
 public class Snake extends Animal {
-    protected Fodder fodder;
+    protected FoodTest foodTest;
 
     public Snake(String name, double weight) {
         super(name, weight);
-        //fodder = new SnakePellet("ormpellets");
+        //foodTest = new SnakePellet("ormpellets");
     }
 
     @Override
