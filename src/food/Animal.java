@@ -1,9 +1,10 @@
 package food;
 
 public abstract class Animal {
-    protected String name;
-    protected double weight; // In gram
-    protected Food food;
+    // Inkapsling av variabler här, kan endast ändras eller fås via getters och setters
+    private String name;
+    private double weight; // In gram
+    private Food food;
 
     public String getName() {
         return name;

@@ -17,6 +17,6 @@ public class Snake extends Animal implements Feeder {
     @Override
     public void feedInfo() {
         System.out.println("Ormen " + getName() + " portion är " +
-                String.format("%.2f", (getWeight() / getFood().getRatio())) + " gram " + getFood().getName());
+                String.format("%.2f", 20.00) + " gram " + getFood().getName());
     }
 }
