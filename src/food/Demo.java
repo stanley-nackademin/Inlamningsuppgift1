@@ -25,7 +25,11 @@ public class Demo {
         while (true) {
             System.out.println("Vilket djur ska få mat?");
             Scanner input = new Scanner(System.in);
-            Feeder a = AnimalFeeder.getAnimal(input.nextLine(), animals);
+            String s = input.nextLine();
+            if (s.isEmpty()) {
+                break;
+            }
+            Feeder a = AnimalFeeder.getAnimal(s, animals);
             if (a != null) {
                 a.feedInfo();
             } else {
