@@ -1,16 +1,22 @@
 package food;
 
-public class Snake extends Animal {
-    protected FoodTest foodTest;
+public class Snake extends Animal implements Feeder {
 
     public Snake(String name, double weight) {
         super(name, weight);
-        //foodTest = new SnakePellet("ormpellets");
+        setFood(Food.SNAKE);
     }
 
     @Override
     public void printInfo() {
-        System.out.println("Ormens namn: " + name);
-        System.out.println("Ormens vikt: " + weight + " g");
+        System.out.println("Djurtyp: Orm");
+        System.out.println("Namn: " + getName());
+        System.out.println("Vikt i gram: " + getWeight());
+    }
+
+    @Override
+    public void feedInfo() {
+        System.out.println("Ormen " + getName() + " portion är " +
+                String.format("%.2f", (getWeight() / getFood().getRatio())) + " gram " + getFood().getName());
     }
 }

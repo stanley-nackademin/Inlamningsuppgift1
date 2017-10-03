@@ -16,6 +16,7 @@ public class Dog extends Animal implements Feeder {
 
     @Override
     public void feedInfo() {
-        System.out.println("Hunden " + getName() + "s portion är " + (getWeight() / getFood().getRatio()) + " gram " + getFood().getName());
+        System.out.println("Hunden " + getName() + " portion är " +
+                String.format("%.2f", (getWeight() / getFood().getRatio())) + " gram " + getFood().getName());
     }
 }
