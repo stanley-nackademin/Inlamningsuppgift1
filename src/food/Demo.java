@@ -33,7 +33,7 @@ public class Demo {
             if (a != null) {
                 a.feedInfo();
             } else {
-                System.out.println("Can not find animal with the given name");
+                System.out.println("Kan ej hitta djuret med det givna namnet");
             }
         }
     }
