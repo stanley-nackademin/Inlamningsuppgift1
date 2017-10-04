@@ -35,5 +35,12 @@ public abstract class Animal {
         this.weight = weight;
     }
 
+    /*
+    Detta är en form av polymorfism. Varje djur har sin egen implementering av printInfo() metoden.
+    Den metod som anropas beror på vilket typ objektet är.
+
+    Det här är även en form av dynamisk bindning. Subklassen som ärver Animal-klassen kommer att method override
+    och ha sin implementering.
+     */
     abstract void printInfo();
 }
