@@ -12,10 +12,10 @@ public class AnimalFeeder {
      */
     public static Feeder getAnimal(String name, List<Animal> animals) {
 
-        String s = name.trim().toLowerCase();
+        String s = name.trim();
 
         for (Animal a : animals) {
-            if (a.getName().toLowerCase().equals(s)) {
+            if (a.getName().equalsIgnoreCase(s)) {
                 return (Feeder)a;
             }
         }
